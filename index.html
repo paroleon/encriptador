@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8">    
+    <meta name="viewport" content="width=device-width">
+    
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,11 +20,13 @@
 <body>
     <header>
         <img class="logo" src="imagenes/Frame6.png" alt="logo de Alura">
+        <h1 class="titulo" >Encriptador ONE - Alura</h1>
     </header>
+
     <main>
-        <section>
+        <section class="caja1">
             <div>
-                <textarea class="text-area" cols="30" rows="10" placeholder="Ingrese texto aqui"></textarea>
+                <textarea class="text-area" rows="10" placeholder="Ingrese texto aqui"></textarea>
             </div>    
             <div>
                 <h6 class="informacion">Ingrese texto sin acento y solo minusculas</h6>
@@ -31,15 +37,24 @@
             </div>
         </section>
 
-        <section>
-            <textarea class="mensaje" cols="30" rows="10" placeholder="Texto encriptado:"></textarea>
+        <section class="caja2">
+            <textarea class="mensaje" rows="10" readonly placeholder="Texto encriptado:"></textarea>
             <div>
+                <h6 class="informacion"></h6>
+            </div> 
+            <div class="botones">
                 <button class="copiar" onclick="btnCopiar()">Copiar</button>
             </div>
         </section>        
             
         
     </main>
+    <footer>
+        <div class="autor" >
+            <h2>&copy Pablo Romero - 2023</h2>    
+            <p>Edición #5: Challenge ONE Principiante en programación</p>            
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 

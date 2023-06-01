@@ -1,57 +1,70 @@
 *{
-    background: #F3F5FC ;
+    
     font-family: 'Inter';
-
     font-weight: 400;
     font-size: 32px;
-    line-height: 150%;
+    line-height: 100%;    
+}
+header {
+    background-color: yellow;         
 }
 
-.logo{
-    padding-top: 10px;
-    margin-left: 10px;
-    width: 5%;
+.logo{    
+    width: 15%;
+    vertical-align: middle;    
 }
 
+.titulo{    
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 150%;  
+    text-align: center; 
+    display: inline-block;
+    vertical-align: middle;    
+    background-color: yellow; 
+    width: 80%;
+    }
 
 main{
-    display: flex;
-    margin-bottom: 50px;
-    margin-left: 80px;
+    display:flex;    
+    background: #F3F5FC ;
 }
+
+.caja1{
+    margin-left: 3%;
+    margin-right: 3%;
+    width: 45%;    
+}
+
+.caja2{
+    margin-left: 3%;
+    margin-right: 3%;
+    width: 45%;
+        
+}
+
 
 .text-area{
-    border: none;
+    border:darkgray ;
+    border-radius: 3%;
     color: #0A3871;
-    margin-top: 90px;
-    text-transform: lowercase;
+    margin-top: 10px;
+    padding: 2%;
+    text-transform: lowercase;        
+    width: 90%;    
+    resize: none;
 }
 
-::placeholder{color: black;}
+::placeholder{color: gray;}
 .text-area focus{
-    outline: none;
-}
-
-.mensaje{
-    background: white;
-    background-image: url(imagenes/Muneco.png);        
-    background-repeat: no-repeat;
-    border: none;
-    border-radius: 24px;
-    color: black;
-    margin-left: 90px;
-    margin-top: 20px;
-    padding-left: 20px;
-    position: fixed;
-}
-.mensaje:focus{
     outline: none;
 }
 
 botones{
     display: flex ;
     margin-top: 18px;
-
+    margin-bottom: 50px;
 
 }
 
@@ -61,9 +74,10 @@ botones{
     border-radius: 24px;
     color: #0A3871;
     cursor: pointer;
-    height: 67px;
-    margin-left: 30px;
-    width: 328px;    
+    padding:  2% 2%  ;
+    margin: 2% 2%;
+    width: 40%;
+    font-size: xx-large;     
 }
 
 .btn-encriptar{
@@ -72,23 +86,107 @@ botones{
     border-radius: 24px;
     color: white;
     cursor: pointer;
-    height: 67px;
-    width: 328px;    
+    padding:  2% 2%  ;
+    width: 40%;  
+    font-size: xx-large; 
 }
+
+.mensaje{
+    background: white;
+    background-image: url("imagenes/Muneco.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    border: none;
+    border-radius: 3%;
+    color: black;    
+    margin-top: 10px;    
+    padding: 2%;
+    width: 90%;   
+    resize: none;
+    align-content: end;
+    
+    /* position: relative ; */
+}
+.mensaje:focus{
+    outline: none;
+}
+
 
 .copiar{
     border: 1px solid #0A3871;
     border-radius: 24px;
     color: #0A3871;
     cursor: pointer;
-    height: 67px;
-    margin-left: 180px;
-    margin-top: 482px;
-    position: absolute;
-    width: 328px;
+    padding:  2% 2%  ;
+    margin: 2% 2%;
+    width: 45%;
+    font-size: xx-large;
 }
 
 .informacion{
     color: #495057;
-    font-size: 28px; 
+    font-size: 24px; 
 }
+
+footer{
+    background-color: yellow;
+    padding:40px;    
+    text-align: center;
+    
+}
+
+.autor{
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%; 
+    display: inline-block;
+}
+
+@media screen and (max-width:480px){
+    .titulo{    
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: x-large;
+        line-height: 150%;  
+        text-align: center; 
+        display: inline-block;
+        vertical-align: middle;    
+        background-color: yellow; 
+        width: 80%;
+        }
+    h1{
+        text-align: center;
+    }
+    main{
+        display:inline-flex;    
+        
+    }
+    
+    .caja1, .caja2 {
+        width: auto;
+    }
+    
+    .btn-desencriptar, .btn-encriptar, .copiar {
+        width: 40%;
+    }
+
+    footer{
+        position: static;
+    }
+
+    .autor{
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: small;
+        line-height: 100%; 
+        display: inline-block;
+    }
+    
+
+
+}
+
+
+
+
