@@ -144,6 +144,10 @@ footer{
 }
 
 @media screen and (max-width:480px){
+    .logo{    
+        width: 30%;
+        vertical-align: middle;    
+    }
     .titulo{    
         font-family: 'Inter';
         font-weight: 400;
@@ -153,22 +157,27 @@ footer{
         display: inline-block;
         vertical-align: middle;    
         background-color: yellow; 
-        width: 80%;
+        width: 60%;
         }
     h1{
         text-align: center;
     }
     main{
-        display:inline-flex;    
+        display:block;    
         
     }
     
     .caja1, .caja2 {
         width: auto;
     }
-    
+
+    .informacion{
+        font-size: small; 
+    }
+
     .btn-desencriptar, .btn-encriptar, .copiar {
-        width: 40%;
+        width: 80%;
+        display: block ;
     }
 
     footer{
