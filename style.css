@@ -178,6 +178,7 @@ footer{
     .btn-desencriptar, .btn-encriptar, .copiar {
         width: 80%;
         display: block ;
+        white-space: normal;
     }
 
     footer{
